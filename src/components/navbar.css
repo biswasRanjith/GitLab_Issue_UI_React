@@ -409,7 +409,7 @@ position: relative;
 --light: #f2f2f2;
 --dark: #4f4f4f;
 --breakpoint-xs: 0;
---breakpoint-sm: 570px;
+--breakpoint-sm: 576px;
 --breakpoint-md: 768px;
 --breakpoint-lg: 992px;
 --breakpoint-xl: 1200px;

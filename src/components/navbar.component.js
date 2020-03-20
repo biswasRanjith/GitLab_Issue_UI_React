@@ -87,7 +87,7 @@ export default class Navbar extends Component {
             <li className="project_row">
                 <div className="project_container">
                     <a className="project_icon" href="#">
-                        <div className="avatar project-avatar s48 identicon" >R</div>
+                        <div className="avatar project-avatar s48 identicon" ></div>
                     </a>
                 </div>
 
