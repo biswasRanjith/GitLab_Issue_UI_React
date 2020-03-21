@@ -1,14 +1,22 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ReactDOM from "react-dom";
 import {Link} from 'react-router-dom';
 import './navbar.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import project from './project.component';
 
 export default class home extends Component {
     render() {
         return (
-            <div>           
+
+            <Router>
+        <Switch>
+        <Route path="/" exact render={() => {
+
+            return (    
+
+            <div className="container">           
                  <div className="heading">
             <h1 className="h1heading">Projects </h1>
             <div className="headingnewproject">
@@ -85,12 +93,14 @@ export default class home extends Component {
                                     <div className="project_avatar" >R</div>
                                 </a>
                             </div>
+                            
             <div className="project_item_container">
                 <div className="project_list_container">
                     <div className="pl_inner_container">
                         <h2 className="pl_inner_h2">
+             
                             <a className="pl_inner_a">
-                            <Route>
+                         
                                 <Link to="/project" >
                                 <span className="pl_inner_span">
                                     <span className="pl_inner_span2">
@@ -101,20 +111,26 @@ export default class home extends Component {
                                     </span>
                                 </span>    
                             </Link>
-                            </Route>
-                            </a>
                             
+                            </a>
+                           
                         </h2>
                     </div>
                 </div>
             </div>
+           
                         </li>
                     </ul>
                     
                 </div>
                 </div>
 
-        
+)
+}}/>
+<Route exact path="/project" component={project} />
+
+    </Switch>
+</Router>
 
          )
         }
