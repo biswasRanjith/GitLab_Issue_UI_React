@@ -6,6 +6,8 @@ import './navbar.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default class Navbar extends Component {
+
+    
     render() {
         return (
             <div>

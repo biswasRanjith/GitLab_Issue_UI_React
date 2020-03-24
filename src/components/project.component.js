@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
-import {Link} from 'react-router-dom';
+import {Newissues} from '../components/newIssue.component'
+
 import './project.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import {Router,Link} from '@reach/router'
 
 export default class project extends Component {
+
+
+    
+ 
     render() {
 
      return (
@@ -62,12 +67,18 @@ export default class project extends Component {
                         </ul>
                     </li>
 <li className="sidebar_li">
-                        <a className="sidebar_a" href="#">
+                        <Link to="issues" >
+                            
 
 <span className="nav_item_names">
     Issues
 </span>
-                        </a>
+</Link>
+ <Router>
+     <Newissues path="/" />
+    
+ </Router>
+
                         <ul className="sidebar_sublevel_items">
                             {/* <li className="flyout_items">
                                 <a className="flyout_items_a" href="#">
@@ -104,15 +115,16 @@ export default class project extends Component {
 <li className="flyout_divider"></li>
 <li className="sublevel_inner">
     <a className="sublevel_a" href="#">
-        <span className="sublevel_span">Milestones</span>
+        <span className="sublevel_span">Milestoness</span>
     </a>
 </li>
                         </ul>
                     </li>
-<li>bkjbkljn</li>
+<li></li>
                 </ul>
 
                 </div>
+                
             </div>
         </div>
        </div>
