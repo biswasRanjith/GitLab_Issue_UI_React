@@ -1,26 +1,29 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import { Router, Link } from "@reach/router";
 
 
-import  Navbar from "./components/navbar.component";
-import home from "./components/home.component"
-import project from "./components/project.component"
+import Navbar from "./components/navbar.component";
+import Home from "./components/home.component"
+import Project from "./components/project.component"
+import Issues from './components/Issues';
+import Newissue from './components/newIssue.component';
 
 
 function App() {
   return (
-    <Router>
-      <div className="container">
-  <Navbar />
-  <br />
-   
-  <Route path = "/" component={home} />
-  <Route path = "/project" component={project } />
-      </div>
-    </Router>
+    <div className="container">
+      <Navbar />
+      <Router>
 
-   
+        <Home path="/" />
+        <Project path="project/*" />
+        <Newissue path="/newissue" />
+      </Router>
+    </div>
+
+
   );
 }
 
