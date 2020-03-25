@@ -1,131 +1,88 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
-
+import { Accordion, Card, Row, Col} from 'react-bootstrap';
+import Avatar from 'react-avatar';
 import './project.css';
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Router, Link } from '@reach/router'
 import Issues from './Issues';
+import Newissue from './Newissue';
 
 export default class Project extends Component {
 
+constructor(props) {
+    super(props)
+
+    this.state = {
+         issues:[{title:"first issue",author:"Ranjith", date:"03/24/20", hours:10}]
+    };
+    console.log(this.state.issues);
+}
+
+Addissue=(issue)=>{
+    this.setState(prevState=>({
+        issues:[...prevState.issues,issue]
+    }));
+
+    console.log(this.state.issues);
+
+}
 
 
 
     render() {
 
         return (
-            <div className="container">
-                <div className="layout_page">
-                    <div className="sidebar">
-                        <div className="side_scroll">
-                            <div className="side_header">
-                                <a title="CL_task" href="/project" className="sidebar_a">
-                                    <div className="avatar_container">
-                                        <div className="avatar">C</div>
-                                    </div>
-                                    <div className="sidebar-context-title">
-                                        CL_task
-                            </div>
-                                </a>
-                            </div>
-                            <ul className="sidebar_toplevel_item">
-                                <li className="sidebar_li">
-                                    <a className="sidebar_a" href="#">
 
-                                        <span className="nav_item_names">
-                                            Project Overview
-</span>
-                                    </a>
-                                    <ul className="sidebar_sublevel_items">
-                                        {/* <li className="flyout_items">
-                                <a className="flyout_items_a" href="#">
-                                    <strong className="flyout_items_strong">
-                                        Project Overview
-                                    </strong>
-                                </a>
-                            </li> */}
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">Details</span>
-                                            </a>
-                                        </li>
-
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">Activity</span>
-                                            </a>
-                                        </li>
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">Release</span>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                                <li className="sidebar_li">
-                                    <Link to="issues" >
-
-
-                                        <span className="nav_item_names">
-                                            Issues
-</span>
-                                    </Link>
-
-                                    <ul className="sidebar_sublevel_items">
-                                        {/* <li className="flyout_items">
-                                <a className="flyout_items_a" href="#">
-                                    <strong className="flyout_items_strong">
-                                        Project Overview
-                                    </strong>
-                                </a>
-                            </li> */}
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">List</span>
-                                            </a>
-                                        </li>
-
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">Boards</span>
-                                            </a>
-                                        </li>
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">Labels</span>
-                                            </a>
-                                        </li>
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">Service Desk</span>
-                                            </a>
-                                        </li>
-                                        <li className="flyout_divider"></li>
-                                        <li className="sublevel_inner">
-                                            <a className="sublevel_a" href="#">
-                                                <span className="sublevel_span">Milestoness</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-                <Router>
-                    <Issues path="issues" />
-                </Router>
-            </div>
+            <Row>
+                <nav-sidebar>
+                <nav-sidebar-inner-scroll>
+                    <context-header>
+                        <Col sm="1" />
+                        <Avatar sm="5" name="C" size={"40px"} color="#afc8f0" />
+                        <sidebar-context-title>
+                        cl_task
+                        </sidebar-context-title>
+                    </context-header>
+                    <container-fulid>
+                    <Accordion defaultActiveKey="0">
+                        <Card>
+                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                                Project Overview
+    </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <Card.Body>
+                                    <ul style={{ listStyleType: "none" }}>
+                                        <li><Link to="#">Details</Link></li>
+                                        <li><Link to="#">Activity</Link></li>
+                                        <li><Link to="#">Release</Link></li>
+                                    </ul></Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                        <Card>
+                            <Accordion.Toggle as={Card.Header} eventKey="1">
+                                <Link to="issues">Issues</Link>
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="1">
+                                <Card.Body><ul style={{ listStyleType: "none" }}>
+                                    <li><Link to="#">List</Link></li>
+                                    <li><Link to="#">Boards</Link></li>
+                                    <li><Link to="#">Labels</Link></li>
+                                    <li><Link to="#">Service Desk</Link></li>
+                                    <li><Link to="#">Milestones</Link></li>
+                                </ul></Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
+                    </container-fulid>
+                </nav-sidebar-inner-scroll>
+                </nav-sidebar>
+                <Col sm="10" xs="10">
+                    <Router>
+                        <Issues path="issues" issues={this.state.issues} />
+                        <Newissue path="issues/new" Addissue={this.Addissue} />
+                    </Router>
+                </Col>
+            </Row>
         );
 
     }
