@@ -33,56 +33,137 @@ Addissue=(issue)=>{
 
         return (
 
-            <Row>
-                <nav-sidebar>
-                <nav-sidebar-inner-scroll>
-                    <context-header>
-                        <Col sm="1" />
-                        <Avatar sm="5" name="C" size={"40px"} color="#afc8f0" />
-                        <sidebar-context-title>
-                        cl_task
-                        </sidebar-context-title>
-                    </context-header>
-                    <container-fulid>
-                    <Accordion defaultActiveKey="0">
-                        <Card>
+            <div className="container">
+            <div className="layout_page">
+                <div className="sidebar">
+                    <div className="side_scroll">
+                        <div className="side_header">
+                            <a title="CL_task" href="/project" className="sidebar_a">
+                                <div className="avatar_container">
+                                    <div className="avatar">C</div>
+                                </div>
+                                <div className="sidebar-context-title">
+                                    CL_task
+                        </div>
+                            </a>
+                        </div>
+                        <Accordion defaultActiveKey="0">
+                      
+                        <ul className="sidebar_toplevel_item">
+                            
+                            <li className="sidebar_li">
+                            <Card>
                             <Accordion.Toggle as={Card.Header} eventKey="0">
-                                Project Overview
-    </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="0">
+                                <a className="sidebar_a" href="#">
+                                
+                                    <span className="nav_item_names">
+                                        Project Overview
+</span>
+                                </a>
+                                </Accordion.Toggle>
+                                <ul className="sidebar_sublevel_items">
+                                    {/* <li className="flyout_items">
+                            <a className="flyout_items_a" href="#">
+                                <strong className="flyout_items_strong">
+                                    Project Overview
+                                </strong>
+                            </a>
+                        </li> */}
+                        <Accordion.Collapse eventKey="0">
                                 <Card.Body>
-                                    <ul style={{ listStyleType: "none" }}>
-                                        <li><Link to="#">Details</Link></li>
-                                        <li><Link to="#">Activity</Link></li>
-                                        <li><Link to="#">Release</Link></li>
-                                    </ul></Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                        <Card>
-                            <Accordion.Toggle as={Card.Header} eventKey="1">
+                                    <li className="flyout_divider"></li>
+                                    <li className="sublevel_inner">
+                                        <a className="sublevel_a" href="#">
+                                            <span className="sublevel_span">Details</span>
+                                        </a>
+                                    </li>
+
+                                    <li className="flyout_divider"></li>
+                                    <li className="sublevel_inner">
+                                        <a className="sublevel_a" href="#">
+                                            <span className="sublevel_span">Activity</span>
+                                        </a>
+                                    </li>
+                                    <li className="flyout_divider"></li>
+                                    <li className="sublevel_inner">
+                                        <a className="sublevel_a" href="#">
+                                            <span className="sublevel_span">Release</span>
+                                        </a>
+                                    </li>
+                                    </Card.Body>
+                                    </Accordion.Collapse>
+                        
+                                </ul>
+                                </Card>
+                            </li>
+                            <Card>
+                            <li className="sidebar_li">
+                            
+                            <ul className="sidebar_sublevel_items">
+          
+                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                                <div className="sidebar_a">
+                            <span className="nav_item_names">
                                 <Link to="issues">Issues</Link>
-                            </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="1">
-                                <Card.Body><ul style={{ listStyleType: "none" }}>
-                                    <li><Link to="#">List</Link></li>
-                                    <li><Link to="#">Boards</Link></li>
-                                    <li><Link to="#">Labels</Link></li>
-                                    <li><Link to="#">Service Desk</Link></li>
-                                    <li><Link to="#">Milestones</Link></li>
-                                </ul></Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    </container-fulid>
-                </nav-sidebar-inner-scroll>
-                </nav-sidebar>
-                <Col sm="10" xs="10">
+                                </span>
+                                </div>
+                                </Accordion.Toggle>
+                                <Accordion.Collapse eventKey="0">
+                                <Card.Body>
+                                        <ul className="sidebar_sublevel_items">
+                                
+                                        <li className="flyout_divider"></li>
+                                        <li className="sublevel_inner">
+                                            <a className="sublevel_a" href="#">
+                                                <span className="sublevel_span">List</span>
+                                            </a>
+                                        </li>
+
+                                        <li className="flyout_divider"></li>
+                                        <li className="sublevel_inner">
+                                            <a className="sublevel_a" href="#">
+                                                <span className="sublevel_span">Boards</span>
+                                            </a>
+                                        </li>
+                                        <li className="flyout_divider"></li>
+                                        <li className="sublevel_inner">
+                                            <a className="sublevel_a" href="#">
+                                                <span className="sublevel_span">Labels</span>
+                                            </a>
+                                        </li>
+                                        <li className="flyout_divider"></li>
+                                        <li className="sublevel_inner">
+                                            <a className="sublevel_a" href="#">
+                                                <span className="sublevel_span">Service Desk</span>
+                                            </a>
+                                        </li>
+                                        <li className="flyout_divider"></li>
+                                        <li className="sublevel_inner">
+                                            <a className="sublevel_a" href="#">
+                                                <span className="sublevel_span">Milestoness</span>
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                    </Card.Body>
+                                    </Accordion.Collapse>
+                                    </ul>
+                                   
+                                </li>
+                                </Card>
+                            </ul>
+                            
+                            </Accordion> 
+                        </div>
+                        
+                    </div>
                     <Router>
-                        <Issues path="issues" issues={this.state.issues} />
+                                <Issues path="issues" issues={this.state.issues} />
                         <Newissue path="issues/new" Addissue={this.Addissue} />
                     </Router>
-                </Col>
-            </Row>
+                </div>                 
+                 
+              </div>
         );
 
     }
