@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Button, Container, Row, Col, Form } from 'react-bootstrap';
 import Markdown from './Markdown';
 import { Link } from '@reach/router';
+import './project.css';
 
 class Newissue extends Component {
 
@@ -46,7 +47,35 @@ class Newissue extends Component {
 
     render() {
         return (
-            <Container>
+            <Container-fulid>
+<div className="breadcrumbs_container">
+                    <div className="breadcrumbs_links">
+                        <ul className="list_unstyled">
+                            <li>
+                                <a className="breadcrumbs_links_a" href="#">ranjithbiswas755 >
+
+                                </a>
+                            </li>
+                            <li>
+                                <a className="breadcrumbs_links_a" href="#">CL_task >
+
+                                </a>
+                            </li>
+                            <li>
+                                <a className="breadcrumbs_links_a" href="#">Issues >
+
+                                </a>
+                            </li>
+                            <li>
+                                <a className="breadcrumbs_links_a" href="#">New
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <hr />
+<h4>New Issue</h4>
                 <Form>
                     <hr />
                     <Form.Group as={Row} >
@@ -120,7 +149,7 @@ class Newissue extends Component {
                     <Link to="../"><Button variant="success" onClick={this.handleSubmit}>Submit issue</Button>
                     </Link>
                 </Form>
-            </Container>
+            </Container-fulid>
         )
     }
 }

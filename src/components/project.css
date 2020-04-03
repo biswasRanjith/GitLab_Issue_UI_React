@@ -332,7 +332,7 @@ overflow-y: scroll;
     align-self: center;
 }
 
-.sidebar-context-title{
+.sidebar_context_title{
     -webkit-tap-highlight-color: transparent;
     --blue: #007bff;
     --indigo: #6610f2;
@@ -1070,7 +1070,6 @@ position: relative;
 padding-top: 8px;
 padding-bottom: 8px;
 align-items: center;
-border-bottom: 1px solid #e5e5e5;
 }
 
 .toggle_mobile_nav{
@@ -1253,6 +1252,8 @@ align-self: center;
 color: #707070;
 }
 
+
+
 .list_unstyled{
     -webkit-tap-highlight-color: transparent;
 --blue: #007bff;
@@ -1298,6 +1299,52 @@ margin-bottom: 0;
 line-height: 16px;
 }
 
+.breadcrumbs_links_a{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #919191;
+--gray-dark: #4f4f4f;
+--primary: #007bff;
+--secondary: #fafafa;
+--success: #1aaa55;
+--info: #1f78d1;
+--warning: #fc9403;
+--danger: #db3b21;
+--light: #f2f2f2;
+--dark: #4f4f4f;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 400;
+tab-size: 8;
+list-style: none;
+line-height: 16px;
+box-sizing: border-box;
+text-decoration: none;
+background-color: transparent;
+transition: background-color 100ms linear, color 100ms linear, border 100ms linear;
+font-size: 12px;
+color: currentColor;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+flex: 0 1 auto;
+}
 .content_fluid{
     -webkit-tap-highlight-color: transparent;
 --blue: #007bff;
@@ -1420,4 +1467,268 @@ text-align: left;
 font-size: .875rem;
 tab-size: 8;
 box-sizing: border-box;
+}
+.card {
+    border: none;
+}
+.card-header {
+    border-bottom: none;
+}
+.card-body {
+    padding: 0 ;
+}
+.sidebar_sublevel_items {
+    padding-bottom: 0;
+}
+.sideNavLink {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #707070;
+}
+.txtHvr:hover {
+    text-decoration : none;
+    color: #707070;
+}
+.sideNavIcon {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.sublevel_a:hover {
+    text-decoration: none;
+}
+
+.top_area{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #919191;
+--gray-dark: #4f4f4f;
+--primary: #007bff;
+--secondary: #fafafa;
+--success: #1aaa55;
+--info: #1f78d1;
+--warning: #fc9403;
+--danger: #db3b21;
+--light: #f2f2f2;
+--dark: #4f4f4f;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 400;
+line-height: 1;
+color: #2e2e2e;
+text-align: left;
+font-size: .875rem;
+box-sizing: border-box;
+border-bottom: 1px solid #e5e5e5;
+display: flex;
+}
+
+.nav_links{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #919191;
+--gray-dark: #4f4f4f;
+--primary: #007bff;
+--secondary: #fafafa;
+--success: #1aaa55;
+--info: #1f78d1;
+--warning: #fc9403;
+--danger: #db3b21;
+--light: #f2f2f2;
+--dark: #4f4f4f;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 400;
+line-height: 1.5;
+color: #2e2e2e;
+text-align: left;
+font-size: .875rem;
+tab-size: 8;
+box-sizing: border-box;
+flex-wrap: wrap;
+display: flex;
+padding: 0;
+margin: 0;
+list-style: none;
+height: auto;
+border-bottom: 0;
+flex: 1;
+}
+
+.active{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #919191;
+--gray-dark: #4f4f4f;
+--primary: #007bff;
+--secondary: #fafafa;
+--success: #1aaa55;
+--info: #1f78d1;
+--warning: #fc9403;
+--danger: #db3b21;
+--light: #f2f2f2;
+--dark: #4f4f4f;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 400;
+line-height: 1.5;
+color: #2e2e2e;
+font-size: .875rem;
+tab-size: 8;
+list-style: none;
+box-sizing: border-box;
+display: flex;
+}
+
+.active_a{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #919191;
+--gray-dark: #4f4f4f;
+--primary: #007bff;
+--secondary: #fafafa;
+--success: #1aaa55;
+--info: #1f78d1;
+--warning: #fc9403;
+--danger: #db3b21;
+--light: #f2f2f2;
+--dark: #4f4f4f;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+tab-size: 8;
+list-style: none;
+box-sizing: border-box;
+text-decoration: none;
+background-color: transparent;
+transition: background-color 100ms linear, color 100ms linear, border 100ms linear;
+padding: 8px;
+padding-bottom: 9px;
+font-size: 14px;
+line-height: 28px;
+border: 0;
+white-space: nowrap;
+border-bottom: 2px solid #6666c4;
+color: #000;
+font-weight: 600;
+}
+
+.button_tool{
+    
+-webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #919191;
+--gray-dark: #4f4f4f;
+--primary: #007bff;
+--secondary: #fafafa;
+--success: #1aaa55;
+--info: #1f78d1;
+--warning: #fc9403;
+--danger: #db3b21;
+--light: #f2f2f2;
+--dark: #4f4f4f;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+tab-size: 8;
+box-sizing: border-box;
+text-decoration: none;
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+border: 1px solid transparent;
+line-height: 20px;
+transition: background-color 100ms linear, border-color 100ms linear, color 100ms linear, box-shadow 100ms linear;
+border-radius: 4px;
+font-size: 0.875rem;
+font-weight: 400;
+padding: 6px 10px;
+border-color: #e5e5e5;
+color: #2e2e2e;
+white-space: nowrap;
+margin-right: 10px;
+background-color: white;
+box-shadow: 0 0 black;
 }

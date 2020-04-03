@@ -1,8 +1,5 @@
 import React from 'react';
-
 import { Router, Link } from "@reach/router";
-
-
 import Navbar from './components/NavbarComp';
 import Home from "./components/home.component"
 import Project from "./components/project.component"

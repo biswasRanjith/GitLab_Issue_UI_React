@@ -1798,3 +1798,178 @@ color: #2e2e2e;
 box-sizing: border-box;
 }
 
+.navbar_collapse{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #5e5e5e;
+--gray-dark: #404040;
+--primary: #007bff;
+--secondary: #f0f0f0;
+--success: #108548;
+--info: #1f75cb;
+--warning: #ab6100;
+--danger: #dd2b0e;
+--light: #dbdbdb;
+--dark: #404040;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+font-size: .875rem;
+tab-size: 8;
+box-sizing: border-box;
+align-items: center;
+display: flex !important;
+flex: 0 0 auto;
+border-top: 0;
+padding: 0;
+color: #d1d1f0;
+}
+
+.navbar_nav{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #5e5e5e;
+--gray-dark: #404040;
+--primary: #007bff;
+--secondary: #f0f0f0;
+--success: #108548;
+--info: #1f75cb;
+--warning: #ab6100;
+--danger: #dd2b0e;
+--light: #dbdbdb;
+--dark: #404040;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+font-size: .875rem;
+tab-size: 8;
+color: #d1d1f0;
+box-sizing: border-box;
+margin-top: 0;
+display: flex;
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+
+.header_new{
+    -webkit-tap-highlight-color: transparent;
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6d49cb;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #5e5e5e;
+--gray-dark: #404040;
+--primary: #007bff;
+--secondary: #f0f0f0;
+--success: #108548;
+--info: #1f75cb;
+--warning: #ab6100;
+--danger: #dd2b0e;
+--light: #dbdbdb;
+--dark: #404040;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+--font-family-monospace: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-weight: 400;
+line-height: 1.5;
+font-size: .875rem;
+tab-size: 8;
+list-style: none;
+box-sizing: border-box;
+position: relative;
+color: #d1d1f0;
+margin: 0 2px;
+}
+.navbar {
+    padding: 0 !important;
+}
+.navbar-light .navbar-brand {
+    color: #D1D1F0 !important;
+    font-weight: 600;
+    font-size: 24px !important;
+    padding-left: 20px !important;
+}
+.navbar-light .navbar-nav .nav-link .btn-primary{
+    color: #D1D1F0 !important;
+    font-weight: 600;
+    font-size: 12px !important;
+    padding: 6px 8px;
+    background: transparent !important;
+    border: none !important;
+    border-width: 0px;
+}
+.navbar-light .navbar-nav .nav-link .btn-primary:hover {
+    background-color: rgba(209, 209, 240, 0.2) !important;
+    color: rgb(255, 255, 255) !important;
+
+}
+.form-inline .form-control {
+    background-color: rgba(209, 209, 240, 0.2) !important;
+    border: 1px solid transparent !important;
+    width: 300px !important;
+}
+
+input[type=text]:focus{
+    background-color: white !important;
+  }
+.form-inline .form-control:hover {
+    background-color: rgba(209, 209, 240, 0.3)  !important;
+    border: 1px solid transparent !important;
+}
+::placeholder {
+    color: #D1D1F0 !important;
+}
+.fa {
+    font-size: 14px !important;
+}
