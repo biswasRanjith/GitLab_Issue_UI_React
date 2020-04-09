@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
-import { Accordion, Card, Row, Col } from 'react-bootstrap';
-import Avatar from 'react-avatar';
+import { Accordion, Card } from 'react-bootstrap';
 import './project.css';
 import { Router, Link } from '@reach/router'
 import Issues from './Issues';
@@ -63,29 +61,22 @@ export default class Project extends Component {
                                                 </a>
                                             </Accordion.Toggle>
                                             <ul className="sidebar_sublevel_items">
-                                                {/* <li className="flyout_items">
-                            <a className="flyout_items_a" href="#">
-                                <strong className="flyout_items_strong">
-                                    Project Overview
-                                </strong>
-                            </a>
-                        </li> */}
+                                                
                                                 <Accordion.Collapse eventKey="0">
                                                     <Card.Body>
-                                                        {/* <li className="flyout_divider"></li> */}
+
                                                         <li className="sublevel_inner">
                                                             <a className="sublevel_a" href="#">
                                                                 <span className="sublevel_span ml-20 ">Details</span>
                                                             </a>
                                                         </li>
 
-                                                        {/* <li className="flyout_divider"></li> */}
                                                         <li className="sublevel_inner">
                                                             <a className="sublevel_a" href="#">
                                                                 <span className="sublevel_span ml-20 ">Activity</span>
                                                             </a>
                                                         </li>
-                                                        {/* <li className="flyout_divider"></li> */}
+
                                                         <li className="sublevel_inner">
                                                             <a className="sublevel_a" href="#">
                                                                 <span className="sublevel_span ml-20 ">Release</span>

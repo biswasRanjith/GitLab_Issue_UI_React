@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Form, Nav, Navbar, NavDropdown, FormControl, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Button, Form, Nav, Navbar, FormControl, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
-function renderTooltip(props) {
-    return (
-        <Tooltip id="button-tooltip" {...props}>
-            Analytics
-        </Tooltip>
-    );
-}
 function renderTooltip2(props) {
     return (
         <Tooltip id="button-tooltip" {...props}>
@@ -49,14 +42,7 @@ function NavbarComp() {
                         <Nav.Link href="/groups"><Button>Groups &nbsp;<i class="fa fa-angle-down"></i></Button></Nav.Link>
                         <Nav.Link href="/more"><Button>More &nbsp;<i class="fa fa-angle-down"></i></Button></Nav.Link>
 
-                       
-                        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown> */}
+    
                     </Nav>
                     <Nav>
                     <OverlayTrigger

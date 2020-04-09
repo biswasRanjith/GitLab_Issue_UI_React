@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Row, Col, DropdownButton, Dropdown, Form } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { Router, Link } from '@reach/router'
 
 function Issuecontent({ issue,index }) {

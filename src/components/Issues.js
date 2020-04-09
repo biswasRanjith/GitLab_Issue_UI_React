@@ -71,8 +71,6 @@ function Issues(props) {
             <Row>
                 <Col>
                 
-                    {/* <ul className="nav_links"> */}
-                        {/* <li className="active"> */}
                             <a className="active_a">
                                 <span>Open</span>
                             </a> &nbsp;
@@ -82,8 +80,7 @@ function Issues(props) {
                             <a>
                                 <span>All</span>
                             </a>
-                    {/* </li> */}
-                    {/* </ul> */}
+                    
                 </Col> 
     <Col></Col>
             <Col sm="20">  
@@ -117,10 +114,7 @@ function Issues(props) {
     <i class='fas fa-sort-amount-down-alt'></i></button>
       </InputGroup>
       </div>
-                {/* <DropdownButton id="dropdown-basic-button" title="Recent Searches" variant="Secondary">
-                    <Dropdown.Item href="#/action-1">No search</Dropdown.Item>
-                </DropdownButton> */}
-    
+                  
             <hr/>
             { issues.map((issue,index)=><Issuecontent key={index} issue={issue} index={index} />)}
             

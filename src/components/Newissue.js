@@ -30,7 +30,7 @@ class Newissue extends Component {
     }
 
     handleSubmit = (event) => {
-        //event.preventDefault();
+
         var hours= new Date();
         var issue = {
             title: this.state.title,
@@ -90,7 +90,6 @@ class Newissue extends Component {
                         <Form.Label column sm="2">Description</Form.Label>
                         <Col sm="10">
                             <Markdown />
-                            {/* <Form.Control as="textarea" rows="5" placeholder="Write a comment" name="description" value={this.state.description} onChange={this.handleChange} /> */}
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row} controlId="formBasicCheckbox">

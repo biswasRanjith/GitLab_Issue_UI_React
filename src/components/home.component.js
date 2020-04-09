@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ReactDOM from "react-dom";
 import './navbar.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import project from './project.component';
 import { Link } from "@reach/router";
-import Issues from './Issues';
 
 export default class Home extends Component {
     render() {
@@ -61,12 +57,7 @@ export default class Home extends Component {
                                     ALL
                     </a>
                             </li>
-                            {/* 
-            <li className="divtwoli">
-                    <a className="shortcuts-activity" data-placemant="right" href="#">
-                        Personal
-                    </a>
-            </li> */}
+                           
                         </ul>
                     </div>
                     <div className="divfour" data-qa-selector="project_list">
